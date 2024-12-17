@@ -5,40 +5,38 @@ function delay(ms) {
 
 async function startChallenge(answer) {
   document.querySelector(".card").style.display = "none";
-  //   document.getElementById("textContainer").style.display = "block";
-  //   await delay(3000);
+  document.getElementById("textContainer").style.display = "block";
+  await delay(2000);
 
-  //   document.getElementById("textContainer").style.display = "none";
-  //   document.getElementById("textContainer2").style.display = "block";
-  //   await delay(3000);
+  document.getElementById("textContainer").style.display = "none";
+  document.getElementById("textContainer2").style.display = "block";
+  await delay(4000);
 
-  //   document.getElementById("textContainer2").style.display = "none";
-  //   document.getElementById("textContainer3").style.display = "block";
-  //   await delay(3000);
+  document.getElementById("textContainer2").style.display = "none";
+  document.getElementById("textContainer3").style.display = "block";
+  await delay(4000);
 
-  // document.getElementById("textContainer3").style.display = "none";
-  // document.getElementById("textContainer4").style.display = "block";
+  document.getElementById("textContainer3").style.display = "none";
+  document.getElementById("textContainer4").style.display = "block";
 
-  document.getElementById("puzzleContainer").style.display = "block";
-
-  // new Typed("#typed-output", {
-  //   strings: [
-  //     "Okaiii aku akan kasih teka teki untuk menghidupkan semangattt Diri.",
-  //     "Jangan lupa senyum dulu yaa! 😊",
-  //   ],
-  //   typeSpeed: 30, // Kecepatan mengetik
-  //   backSpeed: 20, // Kecepatan menghapus teks
-  //   startDelay: 1000, // Delay sebelum mulai mengetik
-  //   backDelay: 1500, // Delay sebelum menghapus teks
-  //   loop: false, // Apakah teks akan berulang
-  //   onComplete: function () {
-  //     // Setelah animasi selesai
-  //     setTimeout(function () {
-  //       document.getElementById("textContainer4").style.display = "none";
-  //       document.getElementById("puzzleContainer").style.display = "block";
-  //     }, 2500);
-  //   },
-  // });
+  new Typed("#typed-output", {
+    strings: [
+      "Okaiii aku akan kasih teka teki untuk menghidupkan semangattt Kak Intan.",
+      "Jangan lupa senyum dulu yaa! 😊",
+    ],
+    typeSpeed: 30, // Kecepatan mengetik
+    backSpeed: 20, // Kecepatan menghapus teks
+    startDelay: 1000, // Delay sebelum mulai mengetik
+    backDelay: 1500, // Delay sebelum menghapus teks
+    loop: false, // Apakah teks akan berulang
+    onComplete: function () {
+      // Setelah animasi selesai
+      setTimeout(function () {
+        document.getElementById("textContainer4").style.display = "none";
+        document.getElementById("puzzleContainer").style.display = "block";
+      }, 2500);
+    },
+  });
 
   //   document.getElementById("puzzleContainer").style.display = "block";
 
@@ -79,7 +77,7 @@ function checkAnswer() {
 
     new Typed("#typed-output2", {
       strings: [
-        "yapp betul kak audi jawabannya semangat, apalagi kalo udah dapat semangat dari ku hehe. pokoknya kak, ganbatte 🔥, Ini mungkin terasa berat sekarang, tapi kakak punya kesempatan untuk membangun hidup yang lebih baik, lebih bahagia, dan lebih sesuai dengan diri kak ☺️ 💪",
+        "Betul banget, Kak Intan! Semangat terus, apalagi kalau sudah dapat dukungan semangat dariku, hehe. Pokoknya, Kak, ganbatte! 🔥 Mungkin ini terasa berat sekarang, tapi Kakak punya kesempatan besar untuk membangun hidup yang lebih baik, lebih bahagia, dan lebih sesuai dengan diri Kakak. Setelah Kak Intan berhasil melewati rintangan ini, aku bakal kasih reward spesial. Rahasia dulu, ya, pokoknya ditunggu aja, hehe! 💪☺️",
       ],
       typeSpeed: 50,
       onComplete: function () {
@@ -91,7 +89,20 @@ function checkAnswer() {
     });
   } else {
     document.getElementById("puzzleResult").textContent =
-      "Tooteet, coba lagi Kak Audi!, *semangat* lagi Jawabnya hehe!";
+      "Tooteet, coba lagi Kak Intan!, *semangat* lagi Jawabnya hehe!";
     document.getElementById("puzzleResult").style.color = "red";
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const audio = document.getElementById("background-music");
+
+  // Coba play musik
+  const playAudio = () => {
+    audio.play().catch((error) => {
+      console.log("Autoplay dicegah oleh browser:", error);
+    });
+  };
+
+  playAudio();
+});
