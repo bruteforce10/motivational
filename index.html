@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <title>Challenge dan Semangat</title>
+  </head>
+  <body>
+    <!-- Card -->
+    <div class="card">
+      <div class="question">Apakah Kamu Yakin Mengikuti Challenge ini?</div>
+      <div class="answers">
+        <div class="answer" onclick="startChallenge('a')">a. Yakin</div>
+        <div class="answer" onclick="startChallenge('b')">b. Tentu Saja</div>
+        <div class="answer" onclick="startChallenge('c')">
+          c. Firdi Ganteng, Mempesona, Perfect
+        </div>
+      </div>
+    </div>
+
+    <!-- Text Container -->
+    <div class="text-container" id="textContainer">
+      <div
+        class="tenor-gif-embed"
+        data-postid="20474841"
+        data-share-method="host"
+        data-aspect-ratio="1.62437"
+        data-width="100%"
+      ></div>
+      <h3 class="text-box fade-in">Hai Diri 😸</h3>
+    </div>
+
+    <div class="text-container zoom-in" id="textContainer2">
+      <div
+        class="tenor-gif-embed"
+        data-postid="9301919548442205824"
+        data-share-method="host"
+        data-aspect-ratio="0.9"
+        data-width="100%"
+      ></div>
+      <h3 class="text-box">Aku yakin kamu baik2 saja ya ☺️</h3>
+    </div>
+
+    <div class="text-container fade-in" id="textContainer3">
+      <div class="gif-container">
+        <div
+          class="tenor-gif-embed"
+          data-postid="13529723205116845676"
+          data-share-method="host"
+          data-aspect-ratio="0.5"
+          data-width="100%"
+        ></div>
+        <div
+          class="tenor-gif-embed"
+          data-postid="11538336602220984080"
+          data-share-method="host"
+          data-aspect-ratio="0.5"
+          data-width="100%"
+        ></div>
+      </div>
+      <h3 class="text-box">
+        Kalau engga nanti Kucing (Firdi
+        <strike>Ganteng</strike>) ini Sedih
+      </h3>
+    </div>
+
+    <div class="text-container fade-in" id="textContainer4">
+      <div
+        class="tenor-gif-embed"
+        data-postid="18100122712595452248"
+        data-share-method="host"
+        data-aspect-ratio="1.19048"
+        data-width="100%"
+      ></div>
+      <h3 class="text-box" id="typed-output"></h3>
+    </div>
+
+    <!-- Puzzle Container -->
+    <div class="puzzle-container" id="puzzleContainer">
+      <div class="puzzle">
+        Aku akan mencoba hadir saat kamu jatuh dan juga ada saat kamu bangkit.
+        Apa aku?
+      </div>
+      <div class="puzzle box">S_M_N_G_T</div>
+      <input
+        type="text"
+        id="puzzleInput"
+        class="puzzle-input"
+        placeholder="Masukkan jawabanmu..."
+      />
+      <button class="puzzle-button" onclick="checkAnswer()">Cek Jawaban</button>
+      <div id="puzzleResult" class="result-message"></div>
+    </div>
+
+    <div class="text-container" id="textContainer5">
+      <h3 class="text-box" id="typed-output2"></h3>
+    </div>
+
+    <div class="text-container fade-in" id="textContainer6">
+      <div class="gif-container">
+        <div
+          class="tenor-gif-embed"
+          data-postid="10834917902810557529"
+          data-share-method="host"
+          data-aspect-ratio="0.564103"
+          data-width="100%"
+        ></div>
+        <div
+          class="tenor-gif-embed"
+          data-postid="7632852274072373483"
+          data-share-method="host"
+          data-aspect-ratio="0.761044"
+          data-width="100%"
+        ></div>
+      </div>
+      <h3 class="text-box">
+        Yeaay Karena Kak Audi Benar Kita Rayakan dengan kucing joget2 🕺🐈,
+        Terima Kasih Kak Audi 🌻
+      </h3>
+    </div>
+
+    <footer>
+      <p>&copy; Dibuat Anak Abah (Anies Presidenku 🔥)</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script
+      type="text/javascript"
+      async
+      src="https://tenor.com/embed.js"
+    ></script>
+  </body>
+</html>
